@@ -1,13 +1,12 @@
 server {
+
 	root /var/www/html;
 
 	# Add index.php to the list if you are using PHP
-	index index.html index.htm index.nginx-debian.html secret.html;
-    server_name lt-2021-013.ml; # managed by Certbot
+	index index.html index.htm index.nginx-debian.html index.txt
+	server_name lt-2021-013.ml; # managed by Certbot
 
 	location / {
-		# First attempt to serve request as file, then
-		# as directory, then fall back to displaying a 404.		
 		proxy_pass http://localhost:8081;
 	}
 
@@ -17,6 +16,10 @@ server {
 		auth_basic_user_file /etc/apache2/.htpasswd;
 	}
 
+	location /web0013 {
+		return 200 "LT-2021-013";
+		add_header Content-Type text/plain;
+	}
 
     listen [::]:443 ssl ipv6only=on; # managed by Certbot
     listen 443 ssl; # managed by Certbot
