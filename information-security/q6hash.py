@@ -10,7 +10,7 @@ print(hashlib.pbkdf2_hmac(
     arg.encode('utf-8'), #tobe converted
     salt, #salt
     200000 # iterations
-))
+).hex())
 
 
 
