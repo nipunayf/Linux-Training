@@ -1,21 +1,9 @@
-dn: uid=Email,ou=Residential Addresss,ou=EmployeeType,ou=Employee,dc=ltacademy,dc=com
-objectClass: inetOrgPerson
-objectClass: top
-cn: Fist Nane 
-sn: Last Name
-email: Email
-mobile: Mobile Number
-homePhone: Home Phome
-employeeType: EmployeeType
-registeredAddress: Residential Addresss
-uid: Email
-
 dn: uid=owen.hudson@lt.com,ou=London,ou=permanent,ou=Employee,dc=ltacademy,dc=com
 objectClass: inetOrgPerson
 objectClass: top
 cn: Owen 
 sn: Hudson
-email: owen.hudson@lt.com
+mail: owen.hudson@lt.com
 mobile: 94771111111
 homePhone: 940112820001
 employeeType: permanent
@@ -27,7 +15,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Rachel 
 sn: Burgess
-email: rachel.burgess@lt.com
+mail: rachel.burgess@lt.com
 mobile: 94771111112
 homePhone: 940112820002
 employeeType: permanent
@@ -39,7 +27,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Mary 
 sn: Mathis
-email: mary.mathis@lt.com
+mail: mary.mathis@lt.com
 mobile: 94771111113
 homePhone: 940112820003
 employeeType: permanent
@@ -51,7 +39,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Molly 
 sn: Vaughan
-email: molly.vaughan@lt.com
+mail: molly.vaughan@lt.com
 mobile: 94771111114
 homePhone: 940112820004
 employeeType: permanent
@@ -63,7 +51,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Piers 
 sn: Duncan
-email: piers.duncan@lt.com
+mail: piers.duncan@lt.com
 mobile: 94771111115
 homePhone: 940112820005
 employeeType: permanent
@@ -75,7 +63,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Dorothy 
 sn: Wallace
-email: dorothy.wallace@lt.com
+mail: dorothy.wallace@lt.com
 mobile: 94771111116
 homePhone: 940112820006
 employeeType: permanent
@@ -87,7 +75,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Emma 
 sn: Clark
-email: emma.clark@lt.com
+mail: emma.clark@lt.com
 mobile: 94771111117
 homePhone: 940112820007
 employeeType: permanent
@@ -99,7 +87,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Tracey 
 sn: Mills
-email: tracey.mills@lt.com
+mail: tracey.mills@lt.com
 mobile: 94771111118
 homePhone: 940112820008
 employeeType: permanent
@@ -111,7 +99,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Dorothy 
 sn: Wilkins
-email: dorothy.wilkins@lt.com
+mail: dorothy.wilkins@lt.com
 mobile: 94771111119
 homePhone: 940112820009
 employeeType: permanent
@@ -123,7 +111,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Ava 
 sn: Lambert
-email: ava.lambert@lt.com
+mail: ava.lambert@lt.com
 mobile: 94771111120
 homePhone: 940112820010
 employeeType: permanent
@@ -135,7 +123,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Wanda 
 sn: Kelly
-email: wanda.kelly@lt.com
+mail: wanda.kelly@lt.com
 mobile: 94771111121
 homePhone: 940112820011
 employeeType: permanent
@@ -147,7 +135,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Blake 
 sn: Mills
-email: blake.mills@lt.com
+mail: blake.mills@lt.com
 mobile: 94771111122
 homePhone: 940112820012
 employeeType: permanent
@@ -159,7 +147,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Gordon 
 sn: Simpson
-email: gordon.simpson@lt.com
+mail: gordon.simpson@lt.com
 mobile: 94771111123
 homePhone: 940112820013
 employeeType: permanent
@@ -171,7 +159,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Carl 
 sn: Manning
-email: carl.manning@lt.com
+mail: carl.manning@lt.com
 mobile: 94771111124
 homePhone: 940112820014
 employeeType: permanent
@@ -183,7 +171,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Grace 
 sn: Lee
-email: grace.lee@lt.com
+mail: grace.lee@lt.com
 mobile: 94771111125
 homePhone: 940112820015
 employeeType: permanent
@@ -195,7 +183,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Andrew 
 sn: Oliver
-email: andrew.oliver@lt.com
+mail: andrew.oliver@lt.com
 mobile: 94771111126
 homePhone: 940112820016
 employeeType: permanent
@@ -207,7 +195,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Gabrielle 
 sn: Fisher
-email: gabrielle.fisher@lt.com
+mail: gabrielle.fisher@lt.com
 mobile: 94771111127
 homePhone: 940112820017
 employeeType: permanent
@@ -219,7 +207,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Sean 
 sn: Parr
-email: sean.parr@lt.com
+mail: sean.parr@lt.com
 mobile: 94771111145
 homePhone: 940112820035
 employeeType: contractor
@@ -231,7 +219,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Warren 
 sn: Ferguson
-email: warren.ferguson@lt.com
+mail: warren.ferguson@lt.com
 mobile: 94771111146
 homePhone: 940112820036
 employeeType: contractor
@@ -243,7 +231,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Gabrielle 
 sn: Vaughan
-email: gabrielle.vaughan@lt.com
+mail: gabrielle.vaughan@lt.com
 mobile: 94771111147
 homePhone: 940112820037
 employeeType: contractor
@@ -255,7 +243,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Wendy 
 sn: Davidson
-email: wendy.davidson@lt.com
+mail: wendy.davidson@lt.com
 mobile: 94771111148
 homePhone: 940112820038
 employeeType: contractor
@@ -267,7 +255,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Alison 
 sn: Hart
-email: alison.hart@lt.com
+mail: alison.hart@lt.com
 mobile: 94771111149
 homePhone: 940112820039
 employeeType: contractor
@@ -279,7 +267,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Jane 
 sn: Forsyth
-email: jane.forsyth@lt.com
+mail: jane.forsyth@lt.com
 mobile: 94771111150
 homePhone: 940112820040
 employeeType: contractor
@@ -291,7 +279,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Ella 
 sn: Allan
-email: ella.allan@lt.com
+mail: ella.allan@lt.com
 mobile: 94771111151
 homePhone: 940112820041
 employeeType: contractor
@@ -303,7 +291,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Paul 
 sn: Black
-email: paul.black@lt.com
+mail: paul.black@lt.com
 mobile: 94771111152
 homePhone: 940112820042
 employeeType: contractor
@@ -315,7 +303,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Natalie 
 sn: Greene
-email: natalie.greene@lt.com
+mail: natalie.greene@lt.com
 mobile: 94771111153
 homePhone: 940112820043
 employeeType: contractor
@@ -327,7 +315,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Sophie 
 sn: King
-email: sophie.king@lt.com
+mail: sophie.king@lt.com
 mobile: 94771111154
 homePhone: 940112820044
 employeeType: contractor
@@ -339,7 +327,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: James 
 sn: Scott
-email: james.scott@lt.com
+mail: james.scott@lt.com
 mobile: 94771111155
 homePhone: 940112820045
 employeeType: contractor
@@ -351,7 +339,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Jane 
 sn: Brown
-email: jane.brown@lt.com
+mail: jane.brown@lt.com
 mobile: 94771111156
 homePhone: 940112820046
 employeeType: contractor
@@ -363,7 +351,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Kevin 
 sn: Rees
-email: kevin.rees@lt.com
+mail: kevin.rees@lt.com
 mobile: 94771111157
 homePhone: 940112820047
 employeeType: contractor
@@ -375,7 +363,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Brandon 
 sn: MacDonald
-email: brandon.macdonald@lt.com
+mail: brandon.macdonald@lt.com
 mobile: 94771111158
 homePhone: 940112820048
 employeeType: contractor
@@ -387,7 +375,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Olivia 
 sn: Gill
-email: olivia.gill@lt.com
+mail: olivia.gill@lt.com
 mobile: 94771111159
 homePhone: 940112820049
 employeeType: contractor
@@ -399,7 +387,7 @@ objectClass: inetOrgPerson
 objectClass: top
 cn: Lisa 
 sn: McLean
-email: lisa.mclean@lt.com
+mail: lisa.mclean@lt.com
 mobile: 94771111160
 homePhone: 940112820050
 employeeType: contractor

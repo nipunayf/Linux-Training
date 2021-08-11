@@ -6,7 +6,6 @@ ldif_file = open("Books.ldif", "w")
 
 #iterate each row of the excel file
 for i, r in info.iterrows():
-	if i==0: pass #skip the heading
 	name, doc_id, publisher = r
 	ldif_file.write(f"""\
 dn: documentIdentifier={doc_id},ou=Books,dc=ltacademy,dc=com
