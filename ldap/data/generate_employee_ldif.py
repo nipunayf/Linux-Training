@@ -9,7 +9,7 @@ for i, r in info.iterrows():
 	if i==0: continue #skip the heading
 	first_name, last_name, email, mobile_number, home_phone, emp_type, residental_address = r
 	ldif_file.write(f"""\
-dn: uid={email},ou={residental_address},ou={emp_type},ou=Employee,dc=ltacademy,dc=com
+dn: uid={email},ou={residental_address},ou={emp_type},ou=Employees,dc=ltacademy,dc=com
 objectClass: inetOrgPerson
 objectClass: top
 cn: {first_name} 

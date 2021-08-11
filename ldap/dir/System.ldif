@@ -1,0 +1,8 @@
+dn: uid=replicationuser,ou=System,dc=ltacademy,dc=com
+ou: System
+uid: replicationuser
+userPassword: {SSHA}/P1aP5ViP9+vEo+KyZhbTLcgI/azXhIN
+description: Account for the slave server
+objectClass: account
+objectClass: simpleSecurityObject
+

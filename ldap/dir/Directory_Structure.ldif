@@ -1,0 +1,83 @@
+# Subtree for System
+dn: ou=System,dc=ltacademy,dc=com
+ou: System 
+objectclass: organizationalunit
+description: System of ltacademy.com
+
+# Subtree for Books
+dn: ou=Books,dc=ltacademy,dc=com
+ou: Books
+objectclass: organizationalunit
+description: Books of ltacademy.com
+
+# Subtree for Employees
+dn: ou=Employees,dc=ltacademy,dc=com
+ou: Employees
+objectclass: organizationalunit
+description: Employees of ltacademy.com
+
+#
+# Employee subdirectory
+#
+
+# Subtree for Permanent
+dn: ou=permanent,ou=Employees,dc=ltacademy,dc=com
+ou: permanent
+objectclass: organizationalunit
+description: Permanent Employees
+
+# Subtree for Contractor
+dn: ou=contractor,ou=Employees,dc=ltacademy,dc=com
+ou: contractor
+objectclass: organizationalunit
+description: Contractors 
+
+#
+# Permanent subdirectory
+#
+
+# Subtree for London
+dn: ou=London,ou=permanent,ou=Employees,dc=ltacademy,dc=com
+ou: London
+objectclass: organizationalunit
+description: Permanent Employees in London
+
+# Subtree for Berlin
+dn: ou= Berlin,ou=permanent,ou=Employees,dc=ltacademy,dc=com
+ou: Berlin
+objectclass: organizationalunit
+description: Permanent Employees in Berlin
+
+#
+# Contractor subdirectory
+#
+
+# Subtree for Johannesburg
+dn: ou=Johannesburg,ou= contractor,ou=Employees,dc=ltacademy,dc=com
+ou: Johannesburg
+objectclass: organizationalunit
+description: Contractors in Johannesburg 
+
+# Subtree for Colombo
+dn: ou=Colombo,ou=contractor,ou=Employees,dc=ltacademy,dc=com
+ou: Colombo
+objectclass: organizationalunit
+description: Contractors in Colombo 
+
+# Subtree for New York
+dn: ou=New York,ou=contractor,ou=Employees,dc=ltacademy,dc=com
+ou: New York
+objectclass: organizationalunit
+description: Contractors in New York  
+
+# Subtree for Amsterdam
+dn: ou= Amsterdam,ou=contractor,ou=Employees,dc=ltacademy,dc=com
+ou: Amsterdam
+objectclass: organizationalunit
+description: Contractors in Amsterdam  
+
+# Subtree for Moscow
+dn: ou=Moscow,ou=contractor,ou=Employees,dc=ltacademy,dc=com
+ou: Moscow
+objectclass: organizationalunit
+description: Contractors in Moscow   
