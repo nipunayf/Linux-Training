@@ -82,7 +82,7 @@ registeredAddress: London
 uid: molly.vaughan
 userPassword:: e1NTSEF9ek9yUytsbUswZndJTkRVOEtDK3RleFBVa1VmNTlTQkc=
 
-dn: uid=piers.duncan@,ou=staff,dc=ltacademy,dc=com
+dn: uid=piers.duncan,ou=staff,dc=ltacademy,dc=com
 objectClass: inetOrgPerson
 objectClass: top
 cn: Piers 
