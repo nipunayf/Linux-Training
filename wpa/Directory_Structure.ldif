@@ -1,0 +1,97 @@
+# ROOT DN
+dn: dc=ltacademy,dc=com
+dc: ltacademy
+o: ltacademy
+objectclass: organization
+objectclass: dcObject
+
+# Subtree for staff
+dn: ou=staff,dc=ltacademy,dc=com
+ou: staff
+objectclass: organizationalunit
+description: staff of ltacademy.com
+
+# Subtree for groups
+dn: ou=groups,ou=staff,dc=ltacademy,dc=com
+ou: groups
+objectClass: organizationalUnit
+description: groups in staff
+objectClass: top
+
+# Subtree for engineering group
+dn: cn=eng,ou=groups,ou=staff,dc=ltacademy,dc=com
+cn: eng
+objectClass: groupOfNames
+member: uid=owen.hudson,ou=staff,dc=ltacademy,dc=com
+member: uid=rachel.burgess,ou=staff,dc=ltacademy,dc=com
+member: uid=mary.mathis,ou=staff,dc=ltacademy,dc=com
+
+# Subtree for sales group
+dn: cn=sales,ou=groups,ou=staff,dc=ltacademy,dc=com
+cn: sales
+objectClass: groupOfNames
+member: uid=molly.vaughan,ou=staff,dc=ltacademy,dc=com
+member: uid=piers.duncan@,ou=staff,dc=ltacademy,dc=com
+
+# Staff information
+dn: uid=owen.hudson,ou=staff,dc=ltacademy,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Owen 
+sn: Hudson
+mail: owen.hudson@ltacademy.com
+mobile: 94772111111
+homePhone: 940112820001
+registeredAddress: London
+uid: owen.hudson
+userPassword:: e1NTSEF9ek9yUytsbUswZndJTkRVOEtDK3RleFBVa1VmNTlTQkc=
+
+dn: uid=rachel.burgess,ou=staff,dc=ltacademy,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Rachel 
+sn: Burgess
+mail: rachel.burgess@ltacademy.com
+mobile: 94772111112
+homePhone: 940112820002
+registeredAddress: London
+uid: rachel.burgess
+userPassword:: e1NTSEF9ek9yUytsbUswZndJTkRVOEtDK3RleFBVa1VmNTlTQkc=
+
+dn: uid=mary.mathis,ou=staff,dc=ltacademy,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Mary 
+sn: Mathis
+mail: mary.mathis@ltacademy.com
+mobile: 94772111113
+homePhone: 940112820003
+registeredAddress: London
+uid: mary.mathis
+userPassword:: e1NTSEF9ek9yUytsbUswZndJTkRVOEtDK3RleFBVa1VmNTlTQkc=
+
+dn: uid=molly.vaughan,ou=staff,dc=ltacademy,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Molly 
+sn: Vaughan
+mail: molly.vaughan@ltacademy.com
+mobile: 94772111114
+homePhone: 940112820004
+registeredAddress: London
+uid: molly.vaughan
+userPassword:: e1NTSEF9ek9yUytsbUswZndJTkRVOEtDK3RleFBVa1VmNTlTQkc=
+
+dn: uid=piers.duncan@,ou=staff,dc=ltacademy,dc=com
+objectClass: inetOrgPerson
+objectClass: top
+cn: Piers 
+sn: Duncan
+mail: piers.duncan@ltacademy.com
+mobile: 94772111115
+homePhone: 940112820005
+registeredAddress: London
+uid: piers.duncan
+userPassword:: e1NTSEF9ek9yUytsbUswZndJTkRVOEtDK3RleFBVa1VmNTlTQkc=
+
+
