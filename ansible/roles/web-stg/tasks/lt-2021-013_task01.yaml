@@ -1,0 +1,97 @@
+- name: create two GCP instances
+  hosts: localhost
+  gather_facts: no
+  vars_files:
+    - var/gcp_vars.yaml
+    - var/ssh_vars.yaml
+
+  tasks:
+    - name: create IP addresses for GCP instances
+      gcp_compute_address:
+        name: "{{ item }}"
+        region: "{{ region }}"
+        project: "{{ gcp_project }}"
+        service_account_file: "{{ gcp_cred_file }}"
+        auth_kind: "{{ gcp_auth_kind }}"
+      register: gce_ip
+      loop: "{{ instances }}"
+
+    - name: bring up the instance
+      gcp_compute_instance:
+        name: "{{ item.name }}"
+        machine_type: "{{ machine_type }}"
+        disks:
+          - auto_delete: true
+            boot: true
+            initialize_params:
+              source_image: "{{ image }}"
+              disk_size_gb: 30
+        network_interfaces:
+          - access_configs:
+              - name: External NAT
+                nat_ip: "{{ item }}"
+                type: ONE_TO_ONE_NAT
+        tags:
+          items:
+            - http-server
+            - https-server
+        zone: "{{ zone }}"
+        project: "{{ gcp_project }}"
+        service_account_file: "{{ gcp_cred_file }}"
+        auth_kind: "{{ gcp_auth_kind }}"
+      register: gce
+      with_items: "{{ gce_ip.results }}"
+
+  post_tasks:
+    - name: wait for SSH
+      wait_for: delay=5 sleep=5 host={{ item.address }} port=22 state=started timeout=100
+      loop: "{{ gce_ip.results }}"
+
+    - name: Save host data
+      add_host: hostname={{ item.address }} groupname=webservers
+      loop: "{{ gce_ip.results }}"
+
+    - name: Write to hosts file
+      lineinfile:
+        path: /home/nipunafe/ansible_assingment/inventory
+        line: "{{ item.name }}  ansible_host={{ item.address }} ansible_ssh_private_key_file={{  ssh_path  }} ansible_user={{ ssh_user  }}"
+      loop: "{{ gce_ip.results }}"
+
+
+- name: deploy apache webservers on the instances
+  hosts: apache
+  gather_facts: no
+  become: yes
+  become_method: sudo
+  
+  pre_tasks:
+    - name: install python
+      raw: sudo apt -y install python
+      
+  tasks:
+    - name: install apache
+      apt: name=apache2 update_cache=yes state=latest
+
+    - name: install ufw
+      apt: name=ufw update_cache=yes state=latest
+
+    - name: allow ufw firewall on port 80
+      ufw:
+        rule: allow
+        port: '80'
+        proto: tcp
+        
+    - name: gather facts
+      setup:
+
+    - name: create index.html
+      template:
+         src: index.j2
+         dest: /var/www/html/index.html
+
+  handlers:
+    - name: restart-apache
+      service:
+        name: apache2
+        state: restarted
+                     

@@ -1,0 +1,2 @@
+ssh_path: /home/nipunafe/.ssh/ansible
+ssh_user: ansible

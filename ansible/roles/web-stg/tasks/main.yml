@@ -1,0 +1,8 @@
+- name: automate task 1
+  import_tasks: lt-2021-013_task01.yaml
+
+- name: automate task02
+  become: yes
+  become_method: sudo
+  shell:  task02.sh
+

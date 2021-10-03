@@ -1,0 +1,10 @@
+gcp_project:  booming-post-318318
+gcp_auth_kind: serviceaccount
+gcp_cred_file: ansible_service_account.json
+zone: "asia-east1-c"
+region: "asia-east1"
+machine_type: "n1-standard-1"
+image: "projects/ubuntu-os-cloud/global/images/family/ubuntu-1604-lts"
+instances:
+  - web-instance1
+  - web-instance2
